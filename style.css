@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Dancing+Script:wght@700&family=Open+Sans&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Candal', sans-serif;
+
+}
+
+
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image:   url(images/recherche_demploi.jpg);
+    background-repeat: no-repeat;
+     background-position: center; 
+     background-size: cover;
+    min-width: 100%;
+    position: relative;   
+}
+.home.ar{
+    height: 60vh;
+    align-items: center;
+
+}
+.home::before {
+    /* Add an overlay with reduced opacity */
+    content: "";
+    background-color: rgba(0, 0, 0, 0.658); /* Adjust the last value (0.5) for the desired opacity (0.0 to 1.0) */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+   }
+.home-info{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+a.tr{
+    color: #CC0000  ;
+}
+.home-titre{
+    font-size: 40px;
+    color: white;
+    width: 70%;
+}
+.home-titre.ar{
+    font-size: 50px;
+
+}
+.home-titre span{
+    color: rgb(255, 251, 0);
+}
+.home-hashtag  i{
+    margin-top: 20px;
+     color: white;  
+ 
+}
+.home-hashtag {
+    color:  rgb(255, 251, 0);
+    margin-bottom: 30px;
+ }
+ .home-info a.link  {
+      color:  white;
+      background-color: white;
+       color: black;
+      border-radius: 10px;
+      text-decoration: none;
+      padding: 10px 30px;
+  }
+  a.link img{
+    width: 20px;
+  }
+  
+ .home-info a.tr  {
+    color:  white;
+    margin-top: 50px;    
+    text-decoration: none;
+   
+}
+ h2{
+    text-align: center;
+    margin: 40px;
+
+ }
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin-top: 200px;
+    height: 100%;
+}
+
+.pricing-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    position: relative;
+}
+ 
+.pricing-card h2 {
+    color: #333;
+}
+
+.pricing-card p {
+    color: #777;
+    margin: 10px 0;
+}
+
+.pricing-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pricing-card ul li {
+    margin-bottom: 15px;
+}
+.pricing-card ul li::before {
+     content: "\2713";
+    font-size: 25px;
+}
+.pricing-card a.link{
+     color: black;
+    border-radius: 10px;
+    height:  40px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color:rgb(255, 251, 0);
+    color: rgb(0, 0, 0);
+ }
+ .price-whats{
+   text-align: center;
+   margin: 30px 0px ;
+ }
+ .price-whats a {
+    display: inline-block; /* Make the button inline-block for proper alignment */
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #FF0000; /* Change button background color */
+    color: #fff; /* Change button text color */
+    border-radius: 5px;
+    font-weight: bold; /* Increase font weight for button text */
+    transition: background-color 0.3s; /* Add a subtle button hover effect */
+}
+
+.price-whats a:hover {
+    background-color: #CC0000; /* Change button background color on hover */
+}
+  
+  .price {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+
+  }
+  .services {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services h2 {
+    color: #333;
+    width: 100%;
+}
+
+.service {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pricing-card.popular::after{
+    content: 'plus popular';
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    text-align: center;
+      background-color: rgba(255, 0, 0, 0.568)   ;
+    width: 200px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+
+}
+.pricing-card.popular:hover {
+    border: red 2px solid       ;
+}
+.service i {
+    font-size: 40px;
+    color: #333;
+}
+
+.service h3 {
+    color: #333;
+}
+ 
+.service p {
+    color: #777;
+}
+
+
+.realisations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+     flex-wrap: wrap;
+  
+ 
+ }
+
+.realisations h2 {
+    color:#ddd
+     ;
+    
+}
+
+.realisation {
+    border: 10px solid #000000;
+    border-radius: 5px;
+    /* display: inline-block; */
+    margin: 10px;
+    padding: 5px;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+ position: relative; 
+overflow: hidden; 
+}
+
+.realisation img {
+   width: 100%;
+    /*Ajustez la largeur selon vos besoins */
+   height: 100%;
+}
+.realisation p{
+    color: #ffffff;
+    font-size: 25px;
+    position: absolute;
+     bottom: 0;
+       text-align: center;
+  }
+
+ @media screen and (max-width: 700px) {
+    .home-info{
+        position: absolute;
+        top: 10%;
+       } 
+       .home-titre{
+        font-size: 40px;
+        color: white;
+        width: 100%;
+    }
+    .pricing-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pricing-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        margin-top: 60px   ;
+         height: 100%;
+    }
+
+
+
+
+
+
+ 
+ }
+ @media (max-width: 600px) {
+   
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     margin: auto;
+    background-color: #ddd;
+    height: 120%;
+    padding:  50px 20px;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    height: 100%;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    padding: 20px;
+    font-size: 50px;
+} 
+.whatsapp a {
+    color: green;
+
+}
